@@ -99,6 +99,7 @@ class SetOfGamesOutcomes:
         return self._sumStat_probabilityloss.get_t_CI(alpha)
 
 
+
 # run trail of 1000 games to calculate expected reward
 games = SetOfGames(prob_head=0.5, n_games=1000)
 hw6trial = games.simulation(n_games=1000, prob_head=0.5)
