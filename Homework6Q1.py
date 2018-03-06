@@ -114,3 +114,12 @@ hw6trial = games.simulation(n_games=1000, prob_head=0.5)
 print('The 95% Confidence Interval for expected game rewards is:', hw6trial.get_CI_reward(alpha=0.05))
 print('The 95% Confidence Interval for probability loss is:', hw6trial.get_CI_loss(alpha=0.05))
 
+#####QUESTION 2####
+#The 95% Confidence Interval for expected game rewards is: [-31.79297649475803, -20.007023505241968]
+#The 95% Confidence Interval for probability loss is: [0.5766762814896707, 0.6373237185103293]
+
+#Interpretation for Game Rewards: On average, 95% of the time this confidence interval [-31.79297649475803, -20.007023505241968]
+#will cover the true mean if you repeat this experiment many times.
+
+#Interpretation for Probability Loss: On average, 95% of the time this confidence interval [0.5766762814896707, 0.6373237185103293]
+#will cover the true mean if you repeat this experiment many times.
