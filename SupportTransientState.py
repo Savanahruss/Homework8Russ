@@ -12,7 +12,7 @@ def print_outcomes(multi_cohort, strategy_name):
           reward_mean_PI_text)
 
 
-def print_comparative_outcomes(multi_cohort_fair_game, multi_cohort_unfair_game):
+def print_comparative_outcomes(multi_cohort_unfair_game, multi_cohort_fair_game):
 
     increase=Stat.DifferenceStatIndp(
         name='Increase in mean game reward',
@@ -25,7 +25,7 @@ def print_comparative_outcomes(multi_cohort_fair_game, multi_cohort_unfair_game)
         estimate=increase.get_mean(),
         interval=increase.get_t_CI(alpha=P.ALPHA),deci=1)
 
-    print("Expected increase in mean game reward and {:.{prec}%} prediction interval:".format(1 - P.ALPHA,prec=0),
+    print("Expected increase in mean game reward and {:.{prec}%} prediction interval:".format(1 - P.ALPHA,prec=1),
           estimate_CI)
 
 

@@ -1,6 +1,6 @@
 import SupportSteadyState as Support
-import Homework6 as SS
 import Parameters as P
+import Homework6 as SS
 
 fairgame = SS.SetOfGames(
     id=1,
@@ -25,4 +25,4 @@ Support.print_outcomes(Fair_Game,'When there is a 50% probability of heads')
 Support.print_outcomes(Unfair_Game,'When there is a 45% probability of heads')
 
 #print comparative outcomes
-Support.print_comparative_outcomes(Fair_Game,Unfair_Game)
+Support.print_comparative_outcomes(Unfair_Game,Fair_Game)

@@ -110,9 +110,6 @@ class SetOfGamesOutcomes:
         return self._sumStat_gameProbLoss.get_t_CI(alpha)
 
 
-
-
-
 class MultipleGameSets:
     """ representing multiple sets of games (for the analysis from the gambler's perspective """
     def __init__(self, ids, prob_head, n_games_in_a_set):
